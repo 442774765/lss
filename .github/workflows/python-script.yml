@@ -22,4 +22,4 @@ jobs:
         #pip install -r requirements.txt # 如果您的脚本有依赖，请在项目根目录创建 requirements.txt 文件并添加依赖
 
       - name: Run Python script
-        run: python u.py # 替换为您的 Python 脚本文件名
+        run: python U.py # 替换为您的 Python 脚本文件名
