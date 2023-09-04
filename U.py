@@ -76,9 +76,9 @@ def main():
             print(response3.text)
 
             # 判断返回体中的 msg 键值是否为 '再来阅读'，如果是则停止运行
-            if 'msg' in jsonData and jsonData['msg'] == '再来阅读':
-                print("检测到 '再来阅读'，停止运行")
-                break
+            if '再来阅读' in jsonData['msg']:
+            print("发现'再来阅读'，停止运行脚本")
+            break
 
 if __name__ == "__main__":
     main()
