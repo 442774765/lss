@@ -2,7 +2,7 @@ name: Python Script
 
 on:
   schedule:
-    - cron: '52 9 * * *' # 每天 UTC 时间 00:00 运行脚本，可以根据需要自定义时间
+    - cron: '0 10 * * *' # 每天 UTC 时间 00:00 运行脚本，可以根据需要自定义时间
 
 jobs:
   run-script:
