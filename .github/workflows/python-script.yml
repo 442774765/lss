@@ -1,0 +1,24 @@
+name: Python Script
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 运行脚本，可以根据需要自定义时间
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # 选择您想要使用的 Python 版本
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt # 如果您的脚本有依赖，请在项目根目录创建 requirements.txt 文件并添加依赖
+
+      - name: Run Python script
+        run: python your_script.py # 替换为您的 Python 脚本文件名
