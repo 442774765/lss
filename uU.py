@@ -18,7 +18,7 @@ def main():
 
     for i in range(28):
         # 在每次循环中使用相同的 Origins 变量
-        url1 = "https://nsr.zsf2023e458.cloud/yunonline/v1/do_read?uk=a0d782334bd3af666ba2856cd8c300c0"
+        url1 = "https://nsr.zsf2023e458.cloud/yunonline/v1/do_read?uk=b35e9a349e6735de1b88148cf342b871"
         headers1 = {
             'Origin': Origins,
             'Accept-Encoding': 'gzip, deflate, br',
@@ -45,7 +45,7 @@ def main():
 
             url2 = link + "?/"
             headers2 = {
-                'Cookie': 'ysm_uid=oZdBp03T0YHEGAgssGfr8hCCRo1M',
+                'Cookie': 'ysm_uid=non1312141d3d7e1e28650b515a6aa18043',
                 'Accept-Encoding': 'gzip, deflate',
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                 'Connection': 'keep-alive',
@@ -61,7 +61,7 @@ def main():
             time.sleep(10)
 
             timestamp = str(int(time.time()))
-            url3 = f'https://nsr.zsf2023e458.cloud/yunonline/v1/get_read_gold?uka0d782334bd3af666ba2856cd8c300c0&time=12&timestamp={timestamp}'
+            url3 = f'https://nsr.zsf2023e458.cloud/yunonline/v1/get_read_gold?uk=b35e9a349e6735de1b88148cf342b871&time=12&timestamp={timestamp}'
             headers3 = {
                 'Origin': Origins,
                 'Accept-Encoding': 'gzip, deflate, br',
