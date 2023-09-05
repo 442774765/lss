@@ -1,4 +1,4 @@
-name: Python Script
+name: u3
 
 on:
   schedule:
